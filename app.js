@@ -35,6 +35,15 @@ app.get('/api/v1/longest-duration-movies', async (req, res, next) => {
   }
 })
 
+
+/*
+  body: {
+    title,
+    primaryTitle,
+    runTimeMinutes,
+    genres
+  }
+*/
 app.post('/api/v1/new-movie', async (req, res, next) => {
   try {
     if (!req?.body?.title) {
